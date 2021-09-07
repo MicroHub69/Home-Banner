@@ -19,7 +19,7 @@ nav{
     background-position: center;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/laptop2.jpg);
     background-size: cover;
-    padding: 0 8%;
+    padding: 0 100px;
 }
 
 
