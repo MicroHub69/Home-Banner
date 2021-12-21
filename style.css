@@ -1,95 +1,205 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    overflow-y: hidden;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --white: #fff;
+  --p-color: #7b7b7b;
+  --heading-color: #323232;
+  --green-color: #52b765;
+  --g-box-shadow: -15px -10px 14px rgba(157, 174, 185, 0.05);
+  --questions-box-shadow: 0 19px 40px rgba(157, 174, 185, 0.15);
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+p,
+small,
+li {
+  color: var(--p-color);
+  font-size: 16px;
+  margin: 16px 0 0 0;
+  line-height: 27px;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+button {
+  height: 52px;
+  font-size: 15px;
+  border: 0;
+  background: var(--green-color);
+  color: var(--white);
+  z-index: 2;
+  border: 0;
+  font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 0.04em;
+  padding: 6px 14px 6px;
+  border-width: 1px;
+}
+.icon {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+section {
+  margin: 25px 0;
 }
 
-nav{
-    height: 60px;
-    padding: 10px 100px;
+nav {
+  height: 60px;
+  visibility: hidden;
 }
-.nav-logo img{
-    width: 20%;
+.banner {
+  height: 40vh;
+  padding: 40px 0;
+  background: url(images/section-banner.jpg) no-repeat center right/cover;
 }
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background-position: center;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/laptop2.jpg);
-    background-size: cover;
-    padding: 0 100px;
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title h1 {
+  font-weight: 800;
+  color: var(--white);
+  margin-top: 10px;
+}
+.breadcrumb {
+  color: var(--white);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.breadcrumb a {
+  color: var(--white);
+}
+.breadcrumb a::after {
+  content: "/";
+  font-size: 16px;
+  color: var(--white);
+  margin: 0 10px;
+}
+.experience {
+  margin-top: 50px;
+}
+.layout_wrap {
+  position: relative;
+}
+.layout-1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 21px;
+  padding-left: 35px;
+  margin-bottom: 0;
+}
+.layout {
+  position: absolute;
+  max-width: 53%;
+  bottom: 0;
+  left: 15px;
+}
+.exp-text {
+  margin-top: 30px;
+}
+.exp-text small {
+  font-family: Poppins, sans-serif;
+  color: #52b765;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 0.07em;
+}
+.exp-text ul li::before {
+  content: "@";
+  color: var(--green-color);
+  margin-right: 15px;
+  font-family: "FontAwesome";
+  font-size: 16px;
+}
+.records {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.s-icon {
+  display: flex;
+  width: 100%;
+  padding: 15px 70px;
+}
+.records-txt {
+  margin-left: 25px;
+}
+.records-txt p {
+  margin-top: 5px;
+}
+.advantages {
+  margin-top: 60px;
+}
+.align {
+  text-align: center;
+}
+.advantages_wrap {
+  margin: 30px 0;
+}
+.adv-txt p {
+  margin-top: 6px;
+}
+.adv_inner img {
+  margin-right: 20px;
+}
+.adv_inner {
+  display: flex;
+  margin: 20px 0;
 }
 
-
-.content{
-    margin-top: 180px;
-    color: #fff;
-}
-.content h1
-{
-    font-size: 60px;
-}
-
-.profile-search{
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    padding: 15px 20px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 20px 0;
-}
-.profile-search input{
-    background: transparent;
-    outline: none;
-    width: 500px;
-    border: none;
-}
-.profile-search button{
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-.profile-search button img{
-    width: 20%;
-    margin-left: 20px;
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+  h4 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 11px;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  button {
+    height: 35px;
+    font-size: 12px;
+  }
 }
 
-
-/* MEDIA QUARY */
-
-@media(max-width:700px){
-    .container{
-        width: 100%;
-        min-height: 100vh;
-        background-position: center;
-        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))
-        ,url(images/mohammadreza-alidoost-ZkaybGHPSZ8-unsplash.jpg);
-        background-size: cover;
-        padding: 0;
-    }
-    nav{
-        background-color: #fff;
-        height: 55px;
-        padding: 13px 10px;
-    }
-    .content h1 {
-        font-size: 50px;
-        margin-left: 30px;
-    }
-    .profile-search input{
-        width: 250px;
-    }
-    .profile-search {
-        margin: 20px 25px;
-    }
-    .nav-logo img{
-        margin-left: 30px;
-        width: 60%;
-    }
-    .nav-links {
-      display: none;
-    }
+@media (max-width: 1024px) {
+  p,
+  small,
+  li {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
