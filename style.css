@@ -25,6 +25,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+  margin-top: 13px;
   color: var(--heading-color);
 }
 p,
@@ -53,12 +57,18 @@ button {
   padding: 6px 14px 6px;
   border-width: 1px;
 }
-.icon {
+.icon-wrap {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   border-radius: 50%;
   padding: 10px;
   width: 60px;
   height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.icon-wrap img {
+  width: 35px;
 }
 section {
   margin: 25px 0;
@@ -150,6 +160,9 @@ nav {
   width: 100%;
   padding: 15px 70px;
 }
+.s-icon img {
+  width: 35px;
+}
 .records-txt {
   margin-left: 25px;
 }
@@ -165,12 +178,17 @@ nav {
 .advantages_wrap {
   margin: 30px 0;
 }
+.adv-txt {
+  margin-left: 10px;
+}
+.adv-txt h5 {
+  margin-top: 0;
+  font-size: 18px;
+}
 .adv-txt p {
-  margin-top: 6px;
+  margin-top: 2px;
 }
-.adv_inner img {
-  margin-right: 20px;
-}
+
 .adv_inner {
   display: flex;
   margin: 20px 0;
@@ -213,10 +231,14 @@ nav {
 .f-social {
   display: flex;
 }
+.contact_us li {
+  color: #e7e7e7;
+}
 .f-social li {
   background: #fff;
   width: 50px;
   height: 50px;
+  color: #e7e7e7;
   display: flex;
   margin-right: 10px;
   justify-content: center;
@@ -231,15 +253,21 @@ nav {
   fill: red;
 }
 footer {
-  padding: 50px 0 40px;
+  padding: 30px 0 20px;
   background-color: #323232;
   color: #e7e7e7;
 }
 .link_1 h1 {
+  font-size: 25px;
   color: #e7e7e7;
 }
 .link_1 {
+  /* color: #e7e7e7; */
   margin-bottom: 30px;
+}
+.link_1 p {
+  color: #e7e7e7;
+  margin-top: 7px;
 }
 .link_1 input {
   outline: 0;
@@ -251,7 +279,42 @@ footer {
 .link_1 button {
   margin-top: 15px;
 }
-
+.footer_txt {
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+  color: var(--p-color);
+}
+.copyright span {
+  color: var(--green-color);
+}
+.f-policy li a {
+  color: var(--p-color);
+  position: relative;
+}
+.f-policy li a:hover {
+  color: var(--green-color);
+}
+.f-policy li {
+  margin-top: 7px;
+  text-align: center;
+  width: 100%;
+}
+.f-policy li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #52b765;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
 @media (max-width: 768px) {
   .banner {
     height: 150px;
