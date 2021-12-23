@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
   <body>
     <nav></nav>
@@ -24,145 +30,148 @@
     </div>
 
     <!-- 25 years Experience -->
-    <section class="exp-text container">
-      <div class="align">
-        <small>[ Our Services ]</small>
-        <h4>
-          Dry Cleaning & Laundry, <br />
-          Free Delivery
-        </h4>
-      </div>
 
-      <div class="service_card-wrap">
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/gallery.jpg" alt="" />
+    <main>
+      <section class="exp-text container n-container">
+        <div class="align">
+          <small>[ Our Services ]</small>
+          <h4>
+            Dry Cleaning & Laundry, <br />
+            Free Delivery
+          </h4>
+        </div>
 
-            <div class="tt-icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 463 463"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                enable-background="new 0 0 463 463"
-              >
-                <g>
-                  <path
-                    d="m367.5,0h-272c-21.78,0-39.5,17.72-39.5,39.5v368c0,10.336 6.71,19.128 16,22.266v9.734c0,12.958 10.542,23.5 23.5,23.5h272c12.958,0 23.5-10.542 23.5-23.5v-9.734c9.29-3.138 16-11.93 16-22.266v-368c0-21.78-17.72-39.5-39.5-39.5zm-272,15h272c13.51,0 24.5,10.991 24.5,24.5v56.5h-321v-56.5c0-13.509 10.99-24.5 24.5-24.5zm272,433h-272c-4.687,0-8.5-3.813-8.5-8.5v-8.5h289v8.5c0,4.687-3.813,8.5-8.5,8.5zm16-32h-304c-4.687,0-8.5-3.813-8.5-8.5v-296.5h321v296.5c0,4.687-3.813,8.5-8.5,8.5z"
-                  />
-                  <path
-                    d="M231.5,136C161.196,136,104,193.196,104,263.5S161.196,391,231.5,391S359,333.804,359,263.5S301.804,136,231.5,136z    M231.5,376C169.468,376,119,325.533,119,263.5S169.468,151,231.5,151S344,201.467,344,263.5S293.532,376,231.5,376z"
-                  />
-                  <path
-                    d="m279.5,79c12.958,0 23.5-10.542 23.5-23.5s-10.542-23.5-23.5-23.5-23.5,10.542-23.5,23.5 10.542,23.5 23.5,23.5zm0-32c4.687,0 8.5,3.813 8.5,8.5s-3.813,8.5-8.5,8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5z"
-                  />
-                  <path
-                    d="m343.5,79c12.958,0 23.5-10.542 23.5-23.5s-10.542-23.5-23.5-23.5-23.5,10.542-23.5,23.5 10.542,23.5 23.5,23.5zm0-32c4.687,0 8.5,3.813 8.5,8.5s-3.813,8.5-8.5,8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5z"
-                  />
-                  <path
-                    d="m111.5,79h104c8.547,0 15.5-6.953 15.5-15.5v-16c0-8.547-6.953-15.5-15.5-15.5h-104c-8.547,0-15.5,6.953-15.5,15.5v16c0,8.547 6.953,15.5 15.5,15.5zm-.5-31.5c0-0.276 0.225-0.5 0.5-0.5h104c0.275,0 0.5,0.224 0.5,0.5v16c0,0.276-0.225,0.5-0.5,0.5h-104c-0.275,0-0.5-0.224-0.5-0.5v-16z"
-                  />
-                  <path
-                    d="m231.5,168c-52.659,0-95.5,42.841-95.5,95.5s42.841,95.5 95.5,95.5 95.5-42.841 95.5-95.5-42.841-95.5-95.5-95.5zm0,176c-44.388,0-80.5-36.112-80.5-80.5s36.112-80.5 80.5-80.5 80.5,36.112 80.5,80.5-36.112,80.5-80.5,80.5z"
-                  />
-                  <path
-                    d="m231.5,200c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5c26.743,0 48.5,21.757 48.5,48.5 0,4.142 3.357,7.5 7.5,7.5s7.5-3.358 7.5-7.5c0-35.014-28.486-63.5-63.5-63.5z"
-                  />
-                </g>
-              </svg>
+        <div class="service_card-wrap">
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/gallery.jpg" alt="" />
+
+              <div class="tt-icon">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 463 463"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 463 463"
+                >
+                  <g>
+                    <path
+                      d="m367.5,0h-272c-21.78,0-39.5,17.72-39.5,39.5v368c0,10.336 6.71,19.128 16,22.266v9.734c0,12.958 10.542,23.5 23.5,23.5h272c12.958,0 23.5-10.542 23.5-23.5v-9.734c9.29-3.138 16-11.93 16-22.266v-368c0-21.78-17.72-39.5-39.5-39.5zm-272,15h272c13.51,0 24.5,10.991 24.5,24.5v56.5h-321v-56.5c0-13.509 10.99-24.5 24.5-24.5zm272,433h-272c-4.687,0-8.5-3.813-8.5-8.5v-8.5h289v8.5c0,4.687-3.813,8.5-8.5,8.5zm16-32h-304c-4.687,0-8.5-3.813-8.5-8.5v-296.5h321v296.5c0,4.687-3.813,8.5-8.5,8.5z"
+                    />
+                    <path
+                      d="M231.5,136C161.196,136,104,193.196,104,263.5S161.196,391,231.5,391S359,333.804,359,263.5S301.804,136,231.5,136z    M231.5,376C169.468,376,119,325.533,119,263.5S169.468,151,231.5,151S344,201.467,344,263.5S293.532,376,231.5,376z"
+                    />
+                    <path
+                      d="m279.5,79c12.958,0 23.5-10.542 23.5-23.5s-10.542-23.5-23.5-23.5-23.5,10.542-23.5,23.5 10.542,23.5 23.5,23.5zm0-32c4.687,0 8.5,3.813 8.5,8.5s-3.813,8.5-8.5,8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5z"
+                    />
+                    <path
+                      d="m343.5,79c12.958,0 23.5-10.542 23.5-23.5s-10.542-23.5-23.5-23.5-23.5,10.542-23.5,23.5 10.542,23.5 23.5,23.5zm0-32c4.687,0 8.5,3.813 8.5,8.5s-3.813,8.5-8.5,8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5z"
+                    />
+                    <path
+                      d="m111.5,79h104c8.547,0 15.5-6.953 15.5-15.5v-16c0-8.547-6.953-15.5-15.5-15.5h-104c-8.547,0-15.5,6.953-15.5,15.5v16c0,8.547 6.953,15.5 15.5,15.5zm-.5-31.5c0-0.276 0.225-0.5 0.5-0.5h104c0.275,0 0.5,0.224 0.5,0.5v16c0,0.276-0.225,0.5-0.5,0.5h-104c-0.275,0-0.5-0.224-0.5-0.5v-16z"
+                    />
+                    <path
+                      d="m231.5,168c-52.659,0-95.5,42.841-95.5,95.5s42.841,95.5 95.5,95.5 95.5-42.841 95.5-95.5-42.841-95.5-95.5-95.5zm0,176c-44.388,0-80.5-36.112-80.5-80.5s36.112-80.5 80.5-80.5 80.5,36.112 80.5,80.5-36.112,80.5-80.5,80.5z"
+                    />
+                    <path
+                      d="m231.5,200c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5c26.743,0 48.5,21.757 48.5,48.5 0,4.142 3.357,7.5 7.5,7.5s7.5-3.358 7.5-7.5c0-35.014-28.486-63.5-63.5-63.5z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Laundry Service</h3>
+              <p>
+                Let us pick up your dirty laundry, sort it, pre-treat stains,
+                wash, dry, fold and deliver back to you in one neat, easy
+                package.
+              </p>
+              <button>More Info</button>
             </div>
           </div>
 
-          <div class="tt-title">
-            <h3>Laundry Service</h3>
-            <p>
-              Let us pick up your dirty laundry, sort it, pre-treat stains,
-              wash, dry, fold and deliver back to you in one neat, easy package.
-            </p>
-            <button>More Info</button>
-          </div>
-        </div>
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/Blue Coats.jpg" alt="" />
 
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/Blue Coats.jpg" alt="" />
-
-            <div class="tt-icon">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 350.001 350.001"
-                style="enable-background: new 0 0 350.001 350.001"
-                xml:space="preserve"
-              >
-                <path
-                  id="XMLID_2_"
-                  d="M310.535,234.323L196.286,121.622l20.571-20.572c23.079-23.08,23.079-60.633,0-83.713
+              <div class="tt-icon">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 350.001 350.001"
+                  style="enable-background: new 0 0 350.001 350.001"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_2_"
+                    d="M310.535,234.323L196.286,121.622l20.571-20.572c23.079-23.08,23.079-60.633,0-83.713
                     C205.677,6.157,190.812,0,175.001,0s-30.677,6.158-41.856,17.339c-11.181,11.181-17.338,26.045-17.338,41.855
                     c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15c0-7.797,3.037-15.128,8.551-20.642C159.872,33.038,167.203,30,175.001,30
                     c7.799,0,15.13,3.036,20.644,8.55c11.382,11.383,11.382,29.904,0,41.287l-31.178,31.18l-125,123.305
                     c-4.332,4.273-5.653,10.741-3.344,16.372C38.432,256.324,43.915,260,50,260h35v75.001c0,8.284,6.716,15,15,15h150
                     c8.284,0,15-6.716,15-15v-75h35c6.086,0,11.568-3.677,13.878-9.307C316.188,245.064,314.867,238.597,310.535,234.323z
                      M235.001,320.001h-120v-60h120V320.001z M175.001,142.765l88.435,87.236l-176.869-0.001L175.001,142.765z"
-                  fill="#52B765"
-                />
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
+                    fill="#52B765"
+                  />
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Dry Cleaning Services</h3>
+              <p>
+                SMU students and local residents love on our reliable dry
+                cleaning services for the fast, accurate, top quality results.
+              </p>
+              <button>More Info</button>
             </div>
           </div>
+          <!-- CARDS -->
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/Carpet.jpg" alt="" />
 
-          <div class="tt-title">
-            <h3>Dry Cleaning Services</h3>
-            <p>
-              SMU students and local residents love on our reliable dry cleaning
-              services for the fast, accurate, top quality results.
-            </p>
-            <button>More Info</button>
-          </div>
-        </div>
-        <!-- CARDS -->
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/Carpet.jpg" alt="" />
-
-            <div class="tt-icon">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 512 512"
-                style="enable-background: new 0 0 512 512"
-                xml:space="preserve"
-              >
-                <g>
+              <div class="tt-icon">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
                   <g>
-                    <path
-                      d="M460.324,375.198L460.324,375.198c-4.33-10.164-12.485-18.321-22.649-22.649V142.757
+                    <g>
+                      <path
+                        d="M460.324,375.198L460.324,375.198c-4.33-10.164-12.485-18.321-22.649-22.649V142.757
                             c0-64.717-52.651-117.368-117.368-117.368S202.939,78.04,202.939,142.757v134.605c-39.402,1.234-85.868,12.01-125.562,29.263
                             c-62.232,27.05-76.416,55.229-77.357,74.104L0,404.083c0,14.614,1.883,35.732,18.173,50.332
                             c11.744,10.527,28.86,15.706,53.864,16.297l97.424,0.004c11.501,9.894,26.444,15.895,42.77,15.895
@@ -180,118 +189,123 @@
                             C234.448,310.612,253.627,315.612,265.777,325.073z M420.98,382.542c5.156,0,9.351,4.195,9.351,9.353
                             c0,5.156-4.195,9.351-9.351,9.351c-5.156,0-9.351-4.195-9.351-9.351C411.629,386.737,415.824,382.542,420.98,382.542z
                              M478.609,451.967H363.35v-43.378h18.284c6.515,15.297,21.698,26.047,39.345,26.047s32.83-10.752,39.345-26.047h18.285V451.967z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Carpet Cleaning</h3>
+              <p>
+                To keep carpet at peak performance, we recommend professional
+                deep cleaning your carpet every 12 to 18 months.
+              </p>
+              <button>More Info</button>
+            </div>
+          </div>
+
+          <!-- CARDS -->
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/Repair Steaches.jpg" alt="" />
+
+              <div class="tt-icon">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 297 297"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 297 297"
+                >
+                  <g>
+                    <path
+                      d="m237.224,86.376c0-14.933-12.148-27.081-27.081-27.081-14.933,0-27.081,12.148-27.081,27.081s12.148,27.081 27.081,27.081c14.933-1.42109e-14 27.081-12.148 27.081-27.081zm-34.558,0c0-4.123 3.354-7.477 7.477-7.477 4.123,0 7.477,3.354 7.477,7.477 0,4.123-3.354,7.477-7.477,7.477-4.122-1.42109e-14-7.477-3.354-7.477-7.477z"
+                    />
+                    <path
+                      d="m275.134,78.442h-4.286v-14.079c0-19.259-15.669-34.928-34.928-34.928h-179.269c-10.768,0-21.032,4.628-28.162,12.697-7.13,8.069-10.459,18.826-9.133,29.511 0.009,0.067 0.017,0.135 0.027,0.202l11.539,79.452c0.7,4.819 4.831,8.393 9.7,8.393h5.609v13.081c0,5.413 4.389,9.802 9.802,9.802 5.413,0 9.802-4.389 9.802-9.802v-13.081h36.43c5.413,0 9.802-4.389 9.802-9.802v-14.156c0-3.785 3.078-6.863 6.863-6.863h52.927c3.785,0 6.863,3.078 6.863,6.863v54.213h-154.413c-13.403-0.001-24.307,10.903-24.307,24.306 0,11.641 8.228,21.393 19.174,23.755v19.757c0,5.413 4.389,9.802 9.802,9.802h232.07c5.413,0 9.802-4.389 9.802-9.802v-98.074h4.286c12.057,0 21.866-9.809 21.866-21.866v-37.516c0-12.057-9.809-21.865-21.866-21.865zm-196.337-29.403h16.119v29.986h-16.119v-29.986zm-54.49,160.509h164.218c5.413,0 9.802-4.389 9.802-9.802v-64.015c0-14.594-11.873-26.467-26.467-26.467h-52.927c-14.594,0-26.467,11.873-26.467,26.467v4.354h-43.36l-10.306-70.948c-0.614-5.155 0.94-10.132 4.38-14.025 3.46-3.917 8.245-6.074 13.471-6.074h7.443v37.337c0,4.061 3.291,7.352 7.351,7.352h30.822c4.061,0 7.351-3.291 7.351-7.352v-37.336h126.302c8.449,0 15.324,6.875 15.324,15.324v154.59h-226.937c-2.593,0-4.703-2.11-4.703-4.702 0-2.593 2.11-4.703 4.703-4.703zm226.938,38.413h-212.467v-9.405h212.466v9.405zm26.152-110.138c0,1.247-1.015,2.262-2.262,2.262h-4.286v-42.039h4.286c1.247,0 2.262,1.015 2.262,2.262v37.515z"
                     />
                   </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Alterations & Repairs</h3>
+              <p>
+                We have expert seamstresses and tailors on staff to ensure we
+                meet and exceed your fitting requirements.
+              </p>
+              <button>More Info</button>
             </div>
           </div>
 
-          <div class="tt-title">
-            <h3>Carpet Cleaning</h3>
-            <p>
-              To keep carpet at peak performance, we recommend professional deep
-              cleaning your carpet every 12 to 18 months.
-            </p>
-            <button>More Info</button>
-          </div>
-        </div>
+          <!-- CARDS -->
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/iron-towel.jpg" alt="" />
 
-        <!-- CARDS -->
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/Repair Steaches.jpg" alt="" />
-
-            <div class="tt-icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 297 297"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                enable-background="new 0 0 297 297"
-              >
-                <g>
-                  <path
-                    d="m237.224,86.376c0-14.933-12.148-27.081-27.081-27.081-14.933,0-27.081,12.148-27.081,27.081s12.148,27.081 27.081,27.081c14.933-1.42109e-14 27.081-12.148 27.081-27.081zm-34.558,0c0-4.123 3.354-7.477 7.477-7.477 4.123,0 7.477,3.354 7.477,7.477 0,4.123-3.354,7.477-7.477,7.477-4.122-1.42109e-14-7.477-3.354-7.477-7.477z"
-                  />
-                  <path
-                    d="m275.134,78.442h-4.286v-14.079c0-19.259-15.669-34.928-34.928-34.928h-179.269c-10.768,0-21.032,4.628-28.162,12.697-7.13,8.069-10.459,18.826-9.133,29.511 0.009,0.067 0.017,0.135 0.027,0.202l11.539,79.452c0.7,4.819 4.831,8.393 9.7,8.393h5.609v13.081c0,5.413 4.389,9.802 9.802,9.802 5.413,0 9.802-4.389 9.802-9.802v-13.081h36.43c5.413,0 9.802-4.389 9.802-9.802v-14.156c0-3.785 3.078-6.863 6.863-6.863h52.927c3.785,0 6.863,3.078 6.863,6.863v54.213h-154.413c-13.403-0.001-24.307,10.903-24.307,24.306 0,11.641 8.228,21.393 19.174,23.755v19.757c0,5.413 4.389,9.802 9.802,9.802h232.07c5.413,0 9.802-4.389 9.802-9.802v-98.074h4.286c12.057,0 21.866-9.809 21.866-21.866v-37.516c0-12.057-9.809-21.865-21.866-21.865zm-196.337-29.403h16.119v29.986h-16.119v-29.986zm-54.49,160.509h164.218c5.413,0 9.802-4.389 9.802-9.802v-64.015c0-14.594-11.873-26.467-26.467-26.467h-52.927c-14.594,0-26.467,11.873-26.467,26.467v4.354h-43.36l-10.306-70.948c-0.614-5.155 0.94-10.132 4.38-14.025 3.46-3.917 8.245-6.074 13.471-6.074h7.443v37.337c0,4.061 3.291,7.352 7.351,7.352h30.822c4.061,0 7.351-3.291 7.351-7.352v-37.336h126.302c8.449,0 15.324,6.875 15.324,15.324v154.59h-226.937c-2.593,0-4.703-2.11-4.703-4.702 0-2.593 2.11-4.703 4.703-4.703zm226.938,38.413h-212.467v-9.405h212.466v9.405zm26.152-110.138c0,1.247-1.015,2.262-2.262,2.262h-4.286v-42.039h4.286c1.247,0 2.262,1.015 2.262,2.262v37.515z"
-                  />
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <div class="tt-title">
-            <h3>Alterations & Repairs</h3>
-            <p>
-              We have expert seamstresses and tailors on staff to ensure we meet
-              and exceed your fitting requirements.
-            </p>
-            <button>More Info</button>
-          </div>
-        </div>
-
-        <!-- CARDS -->
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/iron-towel.jpg" alt="" />
-
-            <div class="tt-icon">
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 459.76 459.76"
-                style="enable-background: new 0 0 459.76 459.76"
-                xml:space="preserve"
-              >
-                <g id="XMLID_30_">
-                  <path
-                    id="XMLID_225_"
-                    d="M169.34,385.412v-49.215c-4.588-4.587-34.231-34.231-38.915-38.915h-28.761
+              <div class="tt-icon">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 459.76 459.76"
+                  style="enable-background: new 0 0 459.76 459.76"
+                  xml:space="preserve"
+                >
+                  <g id="XMLID_30_">
+                    <path
+                      id="XMLID_225_"
+                      d="M169.34,385.412v-49.215c-4.588-4.587-34.231-34.231-38.915-38.915h-28.761
                    c0.329,1.605,1.03,3.129,2.098,4.424c1.926,2.337,4.796,3.7,7.824,3.7c3.933,0,8.651,0,13.933,0v123.825L169.34,385.412z"
-                  />
-                  <path
-                    id="XMLID_493_"
-                    d="M200.71,459.76c12.101,0,21.91-9.809,21.91-21.91v-33.851l-42.174,42.174
+                    />
+                    <path
+                      id="XMLID_493_"
+                      d="M200.71,459.76c12.101,0,21.91-9.809,21.91-21.91v-33.851l-42.174,42.174
                    C183.724,454.144,191.557,459.76,200.71,459.76z"
-                  />
-                  <path
-                    id="XMLID_496_"
-                    d="M222.62,317.61v-12.203c5.283,0,10.001,0,13.932,0c3.03,0,5.901-1.355,7.828-3.693
+                    />
+                    <path
+                      id="XMLID_496_"
+                      d="M222.62,317.61v-12.203c5.283,0,10.001,0,13.932,0c3.03,0,5.901-1.355,7.828-3.693
                    c1.068-1.297,1.769-2.824,2.097-4.431h-44.184C209.352,304.342,215.537,310.527,222.62,317.61z"
-                  />
-                  <polygon
-                    id="XMLID_497_"
-                    points="178.799,375.952 193.947,360.805 178.799,345.657 	"
-                  />
-                  <circle id="XMLID_500_" cx="174.069" cy="37.841" r="37.841" />
-                  <path
-                    id="XMLID_506_"
-                    d="M117.05,213.7l-5.362,27.683h21.472c-0.178-1.776-0.13-0.17-0.13-24.192L117.05,213.7z"
-                  />
-                  <path
-                    id="XMLID_515_"
-                    d="M388.687,256.629l-165.308,0c1.685-3.293-0.357-11.67-1.717-15.245h0
+                    />
+                    <polygon
+                      id="XMLID_497_"
+                      points="178.799,375.952 193.947,360.805 178.799,345.657 	"
+                    />
+                    <circle
+                      id="XMLID_500_"
+                      cx="174.069"
+                      cy="37.841"
+                      r="37.841"
+                    />
+                    <path
+                      id="XMLID_506_"
+                      d="M117.05,213.7l-5.362,27.683h21.472c-0.178-1.776-0.13-0.17-0.13-24.192L117.05,213.7z"
+                    />
+                    <path
+                      id="XMLID_515_"
+                      d="M388.687,256.629l-165.308,0c1.685-3.293-0.357-11.67-1.717-15.245h0
                    c-4.705-12.364-16.079-21.464-29.755-22.853c-2.352-0.239-1.649-0.185-24.32-0.185v-8.772h10.841c1.726,0,3.35-0.433,4.773-1.193
                    l0,0c3.28-1.749,5.39-5.157,5.39-8.971c0-5.523-4.491-10.163-10.163-10.163h-2.424c-0.898-7.506-6.417-13.967-14.217-15.672
                    l-37.065-8.098c1.488-4.176,2.811-7.917,4.11-11.623l35.566,7.771c8.52,1.862,15.415,7.121,19.592,14.041
@@ -305,57 +319,57 @@
                    c4.13,4.128,10.92,3.962,14.837-0.493c3.574-4.065,3.122-10.296-0.705-14.123l-81.203-81.203l78.767-78.767h66.087
                    c7.096,0,12.833-5.818,12.702-12.943C401.682,262.101,395.682,256.629,388.687,256.629z M229.881,346.431
                    c-6.11-6.11-57.098-57.098-64.393-64.393h128.787L229.881,346.431z"
-                  />
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Steam Iron</h3>
+              <p>
+                These services are accomplished under the guidance of adroit
+                personnel who have affluent industry proficiency.
+              </p>
+              <button>More Info</button>
             </div>
           </div>
 
-          <div class="tt-title">
-            <h3>Steam Iron</h3>
-            <p>
-              These services are accomplished under the guidance of adroit
-              personnel who have affluent industry proficiency.
-            </p>
-            <button>More Info</button>
-          </div>
-        </div>
+          <!-- CARDS -->
+          <div class="service_card">
+            <div class="img_icon">
+              <img src="images/Polish Shoes.jpg" alt="" />
 
-        <!-- CARDS -->
-        <div class="service_card">
-          <div class="img_icon">
-            <img src="images/Polish Shoes.jpg" alt="" />
-
-            <div class="tt-icon">
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 477.237 477.237"
-                style="enable-background: new 0 0 477.237 477.237"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M462.613,267.396c-22.526-15.019-41.16-14.829-78.311-10.811c-36.634,3.958-116.104-19.33-138.359-36.949
+              <div class="tt-icon">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 477.237 477.237"
+                  style="enable-background: new 0 0 477.237 477.237"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M462.613,267.396c-22.526-15.019-41.16-14.829-78.311-10.811c-36.634,3.958-116.104-19.33-138.359-36.949
 		c-18.145-14.364-60.155-69.355-77.375-92.332c-5.754-7.677-14.87-11.843-24.332-11.333l-8.327-10.6
 		c-3.448-4.39-8.624-7.074-14.198-7.365c-5.573-0.279-11.001,1.84-14.888,5.845l-15.029,15.487
 		c-21.33-1.196-35.153-5.921-42.875-9.589h0c-6.245-2.966-13.422-2.516-19.2,1.205c-5.707,3.675-9.045,9.931-8.931,16.734
@@ -405,222 +419,246 @@
 		c-0.332,4.202-0.524,8.613-0.494,13.109C176.564,374.896,74.074,363.653,12.228,352.286z M465.935,316.486
 		c-0.757,4.438-3.343,8.351-7.095,10.733c-33.797,21.456-77.251,34.308-129.222,38.228c-0.025-16.698,3.245-32.429,4.798-38.944
 		c87.884-11.37,117.349-36.203,126.397-47.407C465.355,284.476,469.558,295.232,465.935,316.486z"
-                  />
-                  <path
-                    d="M173.84,315.556c7.72,0,14-6.28,14-14s-6.28-14-14-14s-14,6.28-14,14S166.12,315.556,173.84,315.556z M173.84,297.556
+                    />
+                    <path
+                      d="M173.84,315.556c7.72,0,14-6.28,14-14s-6.28-14-14-14s-14,6.28-14,14S166.12,315.556,173.84,315.556z M173.84,297.556
 		c2.206,0,4,1.794,4,4s-1.794,4-4,4s-4-1.794-4-4S171.634,297.556,173.84,297.556z"
-                  />
-                  <path
-                    d="M207.84,315.556c7.72,0,14-6.28,14-14s-6.28-14-14-14s-14,6.28-14,14S200.12,315.556,207.84,315.556z M207.84,297.556
+                    />
+                    <path
+                      d="M207.84,315.556c7.72,0,14-6.28,14-14s-6.28-14-14-14s-14,6.28-14,14S200.12,315.556,207.84,315.556z M207.84,297.556
 		c2.206,0,4,1.794,4,4s-1.794,4-4,4s-4-1.794-4-4S205.634,297.556,207.84,297.556z"
-                  />
-                  <path
-                    d="M88.84,249.556c22.056,0,40-17.944,40-40s-17.944-40-40-40s-40,17.944-40,40S66.783,249.556,88.84,249.556z M88.84,179.556
+                    />
+                    <path
+                      d="M88.84,249.556c22.056,0,40-17.944,40-40s-17.944-40-40-40s-40,17.944-40,40S66.783,249.556,88.84,249.556z M88.84,179.556
 		c16.542,0,30,13.458,30,30s-13.458,30-30,30s-30-13.458-30-30S72.298,179.556,88.84,179.556z"
-                  />
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="tt-title">
+              <h3>Shoe Cleaning</h3>
+              <p>
+                We use premium cleaning products and standardised processes to
+                take care of your shoes and give them refreshed look.
+              </p>
+              <button>More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <img src="images/machine_credit.jpg" alt="" />
+
+        <div class="exp-text container aside-service">
+          <small>[ Laundry service for your business! ]</small>
+          <h4>Commercial Laundry Service</h4>
+          <p>
+            Large corporations have determined that there is a financial benefit
+            to outsourcing back office work because it saves money. Allowing us
+            to do your laundry is cost effective and will allow you and your
+            employees to focus on your core business. We offer smart solutions
+            to meet your commercial laundry needs. Our Commercial Laundry
+            Clients include:
+          </p>
+          <ul>
+            <li>Salons & Spas</li>
+            <li>Assisted Living / Nursing Homes</li>
+            <li>Restaurants and Caterers</li>
+            <li>Hotels & Motels</li>
+            <li>Religious Organizations</li>
+            <li>Nail Salons</li>
+            <li>Daycare centers</li>
+            <li>Athletic Facilities / Gyms</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="exp-text container n-container">
+        <div class="align">
+          <small>[ Why you’ll love us ]</small>
+          <h4>Our Features</h4>
+        </div>
+
+        <div class="advantages_wrap">
+          <div class="adv_inner hover-effect d-top width-50">
+            <div class="icon-wrap">
+              <img
+                src="images/on-bulb-svgrepo-com.svg"
+                alt="shirt"
+                class="icon"
+              />
+            </div>
+            <div class="adv-txt">
+              <h5>Eco-Friendly Dry Cleaning</h5>
+              <p>
+                Our commitment to eco-friendly practices extends beyond our use
+                of 100% toxin-free cleaning techniques. Our company is also
+                incredibly proud to be a carbon-neutral business.
+              </p>
+            </div>
+          </div>
+          <div class="adv_inner width-50">
+            <div class="icon-wrap">
+              <img src="images/tag-svgrepo-com.svg" alt="shirt" class="icon" />
+            </div>
+
+            <div class="adv-txt">
+              <h5>Wash & Fold</h5>
+              <p>
+                We are excited to offer quality shoe repair & bag services
+                alongside our second to none dry cleaning and wash & fold
+                service. Our staff use the highest quality products.
+              </p>
+            </div>
+          </div>
+          <div class="adv_inner width-50">
+            <div class="icon-wrap">
+              <img src="images/shoe-svgrepo-com.svg" alt="shirt" class="icon" />
+            </div>
+            <div class="adv-txt">
+              <h5>Bag & Shoe Repairs & Shines</h5>
+              <p>
+                We offer one-day day laundry service to customers in our service
+                areas, combining the excellence of dry cleaning with the
+                ultimate convenience in laundry service and laundry delivery.
+              </p>
             </div>
           </div>
 
-          <div class="tt-title">
-            <h3>Shoe Cleaning</h3>
-            <p>
-              We use premium cleaning products and standardised processes to
-              take care of your shoes and give them refreshed look.
-            </p>
-            <button>More Info</button>
+          <div class="adv_inner width-50">
+            <div class="icon-wrap">
+              <img
+                src="images/delivery-svgrepo-com.svg"
+                alt="shirt"
+                class="icon"
+              />
+            </div>
+            <div class="adv-txt">
+              <h5>Package Delivery</h5>
+              <p>
+                Laundry services are considerably the most convenient services
+                that people look for. Laundry is one of the most difficult
+                chores that we have to deal with on a regular basis.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="experience">
-      <img src="images/machine_credit.jpg" alt="" />
-
-      <div class="exp-text container">
-        <small>[ Laundry service for your business! ]</small>
-        <h4>Commercial Laundry Service</h4>
-        <p>
-          Large corporations have determined that there is a financial benefit
-          to outsourcing back office work because it saves money. Allowing us to
-          do your laundry is cost effective and will allow you and your
-          employees to focus on your core business. We offer smart solutions to
-          meet your commercial laundry needs. Our Commercial Laundry Clients
-          include:
-        </p>
-        <ul>
-          <li>Salons & Spas</li>
-          <li>Assisted Living / Nursing Homes</li>
-          <li>Restaurants and Caterers</li>
-          <li>Hotels & Motels</li>
-          <li>Religious Organizations</li>
-          <li>Nail Salons</li>
-          <li>Daycare centers</li>
-          <li>Athletic Facilities / Gyms</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="exp-text container">
-      <div class="align">
-        <small>[ Why you’ll love us ]</small>
-        <h4>Our Features</h4>
-      </div>
-
-      <div class="advantages_wrap">
-        <div class="adv_inner hover-effect d-top">
-          <div class="icon-wrap">
-            <img
-              src="images/on-bulb-svgrepo-com.svg"
-              alt="shirt"
-              class="icon"
-            />
-          </div>
-          <div class="adv-txt">
-            <h5>Eco-Friendly Dry Cleaning</h5>
-            <p>
-              Our commitment to eco-friendly practices extends beyond our use of
-              100% toxin-free cleaning techniques. Our company is also
-              incredibly proud to be a carbon-neutral business.
-            </p>
-          </div>
-        </div>
-        <div class="adv_inner">
-          <div class="icon-wrap">
-            <img src="images/tag-svgrepo-com.svg" alt="shirt" class="icon" />
-          </div>
-
-          <div class="adv-txt">
-            <h5>Wash & Fold</h5>
-            <p>
-              We are excited to offer quality shoe repair & bag services
-              alongside our second to none dry cleaning and wash & fold service.
-              Our staff use the highest quality products.
-            </p>
-          </div>
-        </div>
-        <div class="adv_inner">
-          <div class="icon-wrap">
-            <img src="images/shoe-svgrepo-com.svg" alt="shirt" class="icon" />
-          </div>
-          <div class="adv-txt">
-            <h5>Bag & Shoe Repairs & Shines</h5>
-            <p>
-              We offer one-day day laundry service to customers in our service
-              areas, combining the excellence of dry cleaning with the ultimate
-              convenience in laundry service and laundry delivery.
-            </p>
-          </div>
+      <!-- PROMO -->
+      <section class="container">
+        <div class="align exp-text">
+          <small>[ Money savings coupon ]</small>
+          <h4>Specials & Coupons</h4>
         </div>
 
-        <div class="adv_inner">
-          <div class="icon-wrap">
-            <img
-              src="images/delivery-svgrepo-com.svg"
-              alt="shirt"
-              class="icon"
-            />
-          </div>
-          <div class="adv-txt">
-            <h5>Package Delivery</h5>
-            <p>
-              Laundry services are considerably the most convenient services
-              that people look for. Laundry is one of the most difficult chores
-              that we have to deal with on a regular basis.
-            </p>
+        <div class="coupon_wrap">
+          <div class="carousel owl-carousel">
+            <div class="f-coupon">
+              <div class="discount-1">
+                <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
+                <span class="d-top">Expires: 3/01/2021</span>
+              </div>
+              <div class="discount-2">
+                <h1 class="d-top">FREE DAY</h1>
+                <h6>with Self Serve Wash</h6>
+              </div>
+              <div class="discount-3">
+                <address>
+                  8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
+                  <a href="#">info@yourlaundrysite.com</a>
+                </address>
+              </div>
+              <div class="print">
+                Print coupon <br />
+                Don't Spend ALL DAY. Doing Laundry!
+              </div>
+            </div>
+
+            <div class="f-coupon">
+              <div class="discount-1">
+                <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
+                <span class="d-top">Expires: 3/01/2021</span>
+              </div>
+              <div class="discount-2">
+                <h1 class="d-top">N2000 OFF</h1>
+                <h6>Wash and Fold</h6>
+              </div>
+              <div class="discount-3">
+                <address>
+                  8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
+                  <a href="#">info@yourlaundrysite.com</a>
+                </address>
+              </div>
+              <div class="print">
+                Print coupon <br />
+                Don't Spend ALL DAY. Doing Laundry!
+              </div>
+            </div>
+
+            <div class="f-coupon">
+              <div class="discount-1">
+                <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
+                <span class="d-top">Expires: 3/01/2021</span>
+              </div>
+              <div class="discount-2">
+                <h1 class="d-top">N5000</h1>
+                <h6>First Order with Delivery</h6>
+              </div>
+              <div class="discount-3">
+                <address>
+                  8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
+                  <a href="#">info@yourlaundrysite.com</a>
+                </address>
+              </div>
+              <div class="print">
+                Print coupon <br />
+                Don't Spend ALL DAY. Doing Laundry!
+              </div>
+            </div>
+
+            <div class="f-coupon">
+              <div class="discount-1">
+                <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
+                <span class="d-top">Expires: 3/01/2021</span>
+              </div>
+              <div class="discount-2">
+                <h1 class="d-top">N5000</h1>
+                <h6>First Order with Delivery</h6>
+              </div>
+              <div class="discount-3">
+                <address>
+                  8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
+                  <a href="#">info@yourlaundrysite.com</a>
+                </address>
+              </div>
+              <div class="print">
+                Print coupon <br />
+                Don't Spend ALL DAY. Doing Laundry!
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PROMO -->
-    <section class="container">
-      <div class="align exp-text">
-        <small>[ Money savings coupon ]</small>
-        <h4>Specials & Coupons</h4>
-      </div>
-
-      <div class="coupon_wrap">
-        <div class="f-coupon">
-          <div class="discount-1">
-            <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
-            <span class="d-top">Expires: 3/01/2021</span>
-          </div>
-          <div class="discount-2">
-            <h1 class="d-top">FREE DAY</h1>
-            <h6>with Self Serve Wash</h6>
-          </div>
-          <div class="discount-3">
-            <address>
-              8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
-              <a href="#">info@yourlaundrysite.com</a>
-            </address>
-          </div>
-          <div class="print">
-            Print coupon <br />
-            Don't Spend ALL DAY. Doing Laundry!
-          </div>
-        </div>
-
-        <div class="f-coupon">
-          <div class="discount-1">
-            <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
-            <span class="d-top">Expires: 3/01/2021</span>
-          </div>
-          <div class="discount-2">
-            <h1 class="d-top">N2000 OFF</h1>
-            <h6>Wash and Fold</h6>
-          </div>
-          <div class="discount-3">
-            <address>
-              8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
-              <a href="#">info@yourlaundrysite.com</a>
-            </address>
-          </div>
-          <div class="print">
-            Print coupon <br />
-            Don't Spend ALL DAY. Doing Laundry!
-          </div>
-        </div>
-
-        <div class="f-coupon">
-          <div class="discount-1">
-            <h1 class="brand-name d-top"><span>Sunshine</span>Laundry</h1>
-            <span class="d-top">Expires: 3/01/2021</span>
-          </div>
-          <div class="discount-2">
-            <h1 class="d-top">N5000</h1>
-            <h6>First Order with Delivery</h6>
-          </div>
-          <div class="discount-3">
-            <address>
-              8494 Signal Hill Road <br />Manassas, VA, 20110 <br />
-              <a href="#">info@yourlaundrysite.com</a>
-            </address>
-          </div>
-          <div class="print">
-            Print coupon <br />
-            Don't Spend ALL DAY. Doing Laundry!
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <section class="container">
@@ -735,5 +773,31 @@
         <li><a href="">Privacy Policy</a></li>
       </ul>
     </div>
+
+    <!-- JAVASCRIPT DUPLEX -->
+    <script>
+      $(".carousel").owlCarousel({
+        margin: 10,
+        autoplay: true,
+        loop: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    </script>
+    <script src="app.js"></script>
   </body>
 </html>

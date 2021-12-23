@@ -103,12 +103,18 @@ button:hover {
   width: 35px;
 }
 section {
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 60px;
-  visibility: hidden;
+  box-shadow: var(--questions-box-shadow);
+  background-color: var(--white);
+  z-index: 100;
+  width: 100%;
 }
 .banner {
   height: 40vh;
@@ -416,6 +422,32 @@ SERVICES PAGES
 .brand-name span {
   color: var(--green-color);
 }
+.coupon-wrap {
+  width: 100%;
+}
+
+.owl-dots {
+  margin-top: 10px;
+  text-align: center;
+}
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 16px;
+  outline: 0;
+  border-radius: 50%;
+  background-color: #eaedea !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active {
+  background-color: var(--green-color);
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+}
 .f-coupon {
   margin-top: 25px;
   padding: 5px;
@@ -449,12 +481,117 @@ SERVICES PAGES
 .print {
   background-color: #f1f4f1;
 }
+.img_icon img {
+  height: 310px;
+}
 .print {
   color: var(--p-color);
 }
 .discount-1 {
   color: var(--p-color);
 }
+@media (min-width: 500px) {
+  .service_card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service_card {
+    width: 50%;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    margin-top: 30px;
+    height: 288px;
+    padding: 120px 100px;
+    background: url(images/section-banner.jpg) no-repeat right center/cover;
+  }
+  .breadcrumb {
+    font-size: 17px;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+  .n-container {
+    max-width: 1200px;
+  }
+  .exp-text small {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .exp-text {
+    margin-top: 70px;
+  }
+  section {
+    margin: 70px 0;
+  }
+  .img_icon img {
+    height: 310px;
+  }
+  .service_card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service_card {
+    margin: 30px 0px;
+    width: 33%;
+    padding: 0 15px;
+  }
+  .experience {
+    display: flex;
+    position: relative;
+  }
+  /* Experiece */
+  .experience img {
+    width: 50%;
+    height: 800px;
+  }
+  .aside-service {
+    position: relative;
+    z-index: 2;
+    background: white;
+
+    padding: 70px 50px;
+
+    max-width: 720px;
+    margin: 40px 0 40px -50px;
+    padding: 85px 80px 87px;
+    width: 50.3%;
+  }
+  .aside-service ul {
+    margin-top: 10px;
+  }
+  .aside-service ul li {
+    margin-top: 2px;
+  }
+  .tt-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .width-50 {
+    width: 50%;
+    padding: 0 20px;
+  }
+  .icon-wrap {
+    width: 100px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  .tt-icon svg,
+  .icon-wrap img {
+    width: 40px;
+    height: 40px;
+  }
+  .advantages_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 150px;
@@ -476,6 +613,13 @@ SERVICES PAGES
 }
 
 @media (max-width: 1024px) {
+  .owl-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .owl-dots {
+    margin: 0 6px;
+  }
   p,
   small,
   li {
