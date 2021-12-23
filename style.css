@@ -23,8 +23,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-size: 36px;
   line-height: 46px;
   font-weight: 600;
@@ -42,6 +41,8 @@ li {
 img {
   width: 100%;
   object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
 }
 button {
   height: 52px;
@@ -51,11 +52,42 @@ button {
   color: var(--white);
   z-index: 2;
   border: 0;
+  cursor: pointer;
   font-weight: 600;
+  transition: 0.3s ease-in-out;
   margin-top: 30px;
   letter-spacing: 0.04em;
   padding: 6px 14px 6px;
   border-width: 1px;
+}
+address {
+  color: var(--p-color);
+  font-size: 15px;
+}
+a {
+  color: var(--p-color);
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--green-color);
+  outline: 0;
+}
+button:hover {
+  border: 3px solid var(--green-color);
+  color: var(--green-color);
+  background-color: transparent;
+}
+.tt-title h3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #323232;
+  margin: 32px 0 4px 0;
+  -webkit-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+  position: relative;
+  display: inline-block;
 }
 .icon-wrap {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
@@ -301,6 +333,27 @@ footer {
   text-align: center;
   width: 100%;
 }
+.hover-effect h5 {
+  position: relative;
+  cursor: pointer;
+}
+.hover-effect h5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #52b765;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+.hover-effect h5:hover::before {
+  width: 100%;
+}
 .f-policy li a::before {
   content: "";
   display: block;
@@ -314,6 +367,93 @@ footer {
   background-color: #52b765;
   -webkit-transition: width 0.2s linear;
   transition: width 0.2s linear;
+}
+.f-policy li a:hover:before {
+  width: 100%;
+}
+
+/* ============
+SERVICES PAGES
+=============== */
+.service_card {
+  margin: 50px 0;
+}
+.img_icon {
+  margin-top: 30px;
+  position: relative;
+}
+.tt-title p {
+  margin-top: 0;
+}
+.tt-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  min-width: 60px;
+  font-size: 26px;
+  left: 25px;
+}
+.tt-icon svg {
+  width: 35px;
+  height: 35px;
+}
+.tt-icon svg path {
+  fill: #fff;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #323232;
+  color: var(--heading-color);
+}
+.brand-name span {
+  color: var(--green-color);
+}
+.f-coupon {
+  margin-top: 25px;
+  padding: 5px;
+  position: relative;
+  border: 3px dashed #f1f4f1;
+  background-color: #fff;
+}
+.discount-1,
+.discount-2,
+.discount-3,
+.print {
+  height: auto;
+  padding: 15px 20px;
+}
+.d-top {
+  margin-top: 0;
+}
+.discount-2 {
+  background-color: var(--green-color);
+}
+.discount-2 h1 {
+  color: var(--white);
+}
+.discount-2 h6 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 600;
+  color: var(--white);
+}
+.discount-1,
+.print {
+  background-color: #f1f4f1;
+}
+.print {
+  color: var(--p-color);
+}
+.discount-1 {
+  color: var(--p-color);
 }
 @media (max-width: 768px) {
   .banner {
