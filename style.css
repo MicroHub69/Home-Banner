@@ -60,6 +60,14 @@ button {
   padding: 6px 14px 6px;
   border-width: 1px;
 }
+input {
+  outline: 0;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+}
 address {
   color: var(--p-color);
   font-size: 15px;
@@ -117,7 +125,7 @@ nav {
   width: 100%;
 }
 .banner {
-  margin-top50px
+  margin-top: 50px;
   height: 40vh;
   padding: 40px 0;
   background: url(images/section-banner.jpg) no-repeat center right/cover;
@@ -338,7 +346,6 @@ footer {
 .f-policy li {
   margin-top: 7px;
   text-align: center;
-  width: 100%;
 }
 .hover-effect h5 {
   position: relative;
@@ -491,6 +498,10 @@ SERVICES PAGES
 .discount-1 {
   color: var(--p-color);
 }
+
+/*==========================
+ MEDIA QUERY FROM HERE 500px
+ ============================ */
 @media (min-width: 500px) {
   .service_card-wrap {
     display: flex;
@@ -500,33 +511,83 @@ SERVICES PAGES
     width: 50%;
     padding: 0 20px;
   }
- 
+
   .advantages_wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 }
-
+/*====
+ 650PX
+====== */
 @media (min-width: 650px) {
   .width-50 {
     width: 50%;
     padding: 0 20px;
   }
-}
-@media (min-width: 1024px) {
   .banner {
-    margin-top: 30px;
-    height: 288px;
-    padding: 120px 100px;
-    background: url(images/section-banner.jpg) no-repeat right center/cover;
+    height: 200px;
   }
   .breadcrumb {
     font-size: 17px;
   }
   .title h1 {
-    font-size: 50px;
+    font-size: 48px;
   }
+  .experience {
+    display: flex;
+    position: relative;
+  }
+  .experience img {
+    width: 50%;
+    height: 800px;
+  }
+  .aside-service {
+    background: white;
+    max-width: 720px;
+    margin: 40px 0 40px -50px;
+    padding: 30px;
+    width: 50.3%;
+  }
+}
+
+/*=====
+768px
+===== */
+@media (min-width: 768px) {
+  .ff-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link_1 {
+    max-width: 33.3%;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .footer_txt {
+    display: flex;
+    justify-content: space-between;
+  }
+  .f-policy {
+    display: flex;
+  }
+  .f-policy li {
+    padding: 0 10px;
+  }
+}
+
+/*====
+ 1024PX
+====== */
+@media (min-width: 1024px) {
+  .banner {
+    margin-top: 30px;
+    height: 288px;
+    padding: 120px 0;
+    background: url(images/section-banner.jpg) no-repeat right center/cover;
+  }
+
   .n-container {
     max-width: 1200px;
   }
@@ -554,25 +615,16 @@ SERVICES PAGES
     width: 33%;
     padding: 0 15px;
   }
-  .experience {
-    display: flex;
-    position: relative;
-  }
   /* Experiece */
-  .experience img {
-    width: 50%;
-    height: 800px;
-  }
+
   .aside-service {
     position: relative;
     z-index: 2;
     background: white;
-
     padding: 70px 50px;
-
     max-width: 720px;
     margin: 40px 0 40px -50px;
-    padding: 85px 80px 87px;
+    padding: 75px 80px 8px;
     width: 50.3%;
   }
   .aside-service ul {
@@ -585,7 +637,7 @@ SERVICES PAGES
     width: 80px;
     height: 80px;
   }
- 
+
   .icon-wrap {
     width: 100px;
     height: 60px;
@@ -596,13 +648,11 @@ SERVICES PAGES
     width: 40px;
     height: 40px;
   }
-  /* .advantages_wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  } */
 }
 
+/*===============
+ MAX_WIDTH 768px
+================= */
 @media (max-width: 768px) {
   .banner {
     height: 150px;
