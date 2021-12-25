@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service - Sunshine Laundry Service</title>
+    <title>Contact - Sunshine Laundry Service</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +31,8 @@
     <!-- Banner -->
     <div class="banner">
       <div class="title container n-container">
-        <div class="breadcrumb"><a href="home.html">home</a> Services</div>
-        <h1>Services</h1>
+        <div class="breadcrumb"><a href="home.html">home</a> Contact Us</div>
+        <h1>Contact</h1>
       </div>
     </div>
 
@@ -57,7 +57,7 @@
 
           <div class="our_address">
             <div class="icon-w mt-default">
-              <img src="images/location-svgrepo-com.svg" alt="" />
+              <img src="images/phone-svgrepo-com.svg" alt="" />
             </div>
 
             <h5 class="d-top">Contact Phone</h5>
@@ -66,7 +66,7 @@
 
           <div class="our_address">
             <div class="icon-w mt-default">
-              <img src="images/location-svgrepo-com.svg" alt="" />
+              <img src="images/mail-svgrepo-com.svg" alt="" />
             </div>
 
             <h5 class="d-top">E-mail Address</h5>
@@ -75,7 +75,7 @@
 
           <div class="our_address">
             <div class="icon-w mt-default">
-              <img src="images/location-svgrepo-com.svg" alt="" />
+              <img src="images/time-svgrepo-com.svg" alt="" />
             </div>
 
             <h5 class="d-top">Opening Hours</h5>
@@ -96,47 +96,67 @@
           environment that’s as enjoyable as it is functional.
         </p>
 
-        <div class="contact_input">
+        <div class="contact_input align">
           <input type="text" placeholder="Your Name" />
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="Phone" />
           <textarea name="" id="" cols="30" rows="10"></textarea>
+
+          <label for="checkbox">
+            <input type="checkbox" class="contact_check" />
+            I accept the privacy and terms.
+          </label>
         </div>
+        <button type="submit">Send Message</button>
       </section>
 
       <!-- GOGGLE_MAP -->
-      <section class="map" style="width: 100%">
+      <div class="map">
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe
-              width="600"
-              height="500"
+              width="100%"
+              height="850"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=instincthub&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-            ></iframe
-            ><a href="https://2piratebay.org"></a><br /><style>
-              .mapouter {
-                position: relative;
-                text-align: right;
-                height: 500px;
-                width: 600px;
-              }</style
-            ><a href="https://www.embedgooglemap.net"></a
-            ><style>
-              .gmap_canvas {
-                overflow: hidden;
-                background: none !important;
-                height: 500px;
-                width: 600px;
-              }
-            </style>
+            ></iframe>
           </div>
         </div>
-      </section>
+
+        <div class="map-layout">
+          <div class="exp-text">
+            <h4>
+              Get in Touch. <br />
+              We're Here to Help.
+            </h4>
+            <p>
+              We look forward to helping you create and maintain a clean,
+              healthy environment that’s as enjoyable as it is functional.
+            </p>
+
+            <div class="ff-form">
+              <input type="text" placeholder="Your Name" />
+              <div class="auto-display">
+                <input type="text" placeholder="Email" class="f-mail" />
+                <input type="text" placeholder="Phone" class="s-phone" />
+              </div>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+
+              <label for="checkbox">
+                <input type="checkbox" class="contact_check" />
+                I accept the privacy and terms.
+              </label>
+            </div>
+            <button>Send Message</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html"><button>Temporary Contact</button></a>
     </main>
 
     <footer>

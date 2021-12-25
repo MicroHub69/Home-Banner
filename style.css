@@ -147,8 +147,8 @@ button:hover {
   padding: 20px 30px;
 }
 .icon-w img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   object-fit: cover;
 }
 .tt-title h3 {
@@ -657,7 +657,37 @@ CONTACT
 .contact_input {
   margin-top: 40px;
 }
-
+.contact_input label {
+  color: var(--p-color);
+}
+.contact_check {
+  width: 35px;
+  height: 16px;
+  color: var(--p-color);
+  margin-top: 20px;
+}
+.map {
+  position: relative;
+}
+.map-layout {
+  position: absolute;
+  width: 40.5%;
+  top: 0;
+  right: 40px;
+  background-color: #fff;
+  padding: 50px;
+  margin-bottom: 120px;
+  z-index: 2;
+}
+.auto-display {
+  display: flex;
+}
+.f-mail {
+  margin-right: 5px;
+}
+.s-phone {
+  margin-left: 5px;
+}
 /*==========================
  MEDIA QUERY FROM HERE 500px
  ============================ */
@@ -705,7 +735,7 @@ CONTACT
   }
 
   .our_address h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .link_1 {
     max-width: 33.3%;
@@ -869,6 +899,12 @@ CONTACT
   .owl-dot {
     width: 6px;
     height: 6px;
+  }
+  .map iframe {
+    height: 350px !important;
+  }
+  .map-layout {
+    display: none;
   }
   .owl-dots {
     margin: 0 6px;
