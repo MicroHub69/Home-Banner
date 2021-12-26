@@ -60,6 +60,7 @@ button {
   padding: 6px 14px 6px;
   border-width: 1px;
 }
+
 input {
   background: #fff;
   font-size: 16px;
@@ -593,62 +594,10 @@ SERVICES PAGES
 .discount-1 {
   color: var(--p-color);
 }
-.width-30-p {
-  width: 40.3%;
-  padding: 0 10px;
-}
-.width-60 {
-  width: 60%;
-  padding: 0 40px;
-}
-.banner {
-  height: 200px;
-}
-.breadcrumb {
-  font-size: 17px;
-}
-.d-sb-s {
-  display: flex;
-  flex-direction: row-reverse;
-  max-width: 1500px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-.title h1 {
-  font-size: 48px;
-}
-.experience {
-  display: flex;
-  position: relative;
-}
-.history {
-  display: flex;
-}
-.overlay-card img {
-  width: 50%;
-  height: 800px;
-}
-.aside-service {
-  background: white;
-  max-width: 720px;
-  margin: 40px 0 40px -50px;
-  padding: 30px;
-  width: 50.3%;
-}
-.aside-service-2 {
-  background: #ffffff;
-  max-width: 720px;
-  margin: 0px 0 40px 0px;
-  padding: 30px;
-  padding-top: 0px;
-  width: 50.3%;
-}
-.our_address h5 {
-  font-size: 16px;
-}
+
 /* =====
-CONTACT 
-=======*/
+      CONTACT 
+      =======*/
 .information {
   flex-wrap: wrap;
   display: flex;
@@ -679,6 +628,13 @@ CONTACT
   margin-bottom: 120px;
   z-index: 2;
 }
+.f-mail {
+  margin-right: 5px;
+}
+.s-phone {
+  margin-left: 5px;
+}
+
 .auto-display {
   display: flex;
 }
@@ -724,7 +680,59 @@ CONTACT
     width: 50%;
     padding: 0 20px;
   }
+
+  .adv_inner {
+    width: 40.3%;
+    padding: 0 10px;
+  }
+  .width-60 {
+    width: 60%;
+    padding: 0 40px;
+  }
+  .banner {
+    height: 200px;
+  }
+  .breadcrumb {
+    font-size: 17px;
+  }
+  .d-sb-s {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .title h1 {
+    font-size: 48px;
+  }
+  .experience {
+    display: flex;
+    position: relative;
+  }
+  .history {
+    display: flex;
+  }
+  .overlay-card img {
+    width: 50%;
+    height: 800px;
+  }
+  .aside-service {
+    background: white;
+    max-width: 720px;
+    margin: 40px 0 40px -50px;
+    padding: 30px;
+    width: 50.3%;
+  }
+  .aside-service-2 {
+    background: #ffffff;
+    max-width: 720px;
+    margin: 0px 0 40px 0px;
+    padding: 30px;
+    padding-top: 0px;
+    width: 50.3%;
+  }
 }
+
 /*=====
 768px
 ===== */
@@ -733,7 +741,6 @@ CONTACT
     display: flex;
     justify-content: space-between;
   }
-
   .our_address h5 {
     font-size: 18px;
   }
@@ -752,7 +759,7 @@ CONTACT
   .f-policy li {
     padding: 0 10px;
   }
-  .width-30-p {
+  .adv_inner {
     width: 33.3%;
     padding: 0 30px;
   }
@@ -775,18 +782,18 @@ CONTACT
     padding: 120px 0;
     background: url(images/section-banner.jpg) no-repeat right center/cover;
   }
+  .information {
+    justify-content: space-between;
+  }
+  .f-form {
+    display: none;
+  }
   .s-icon {
     width: 25%;
     padding: 0 30px;
   }
   .aside-service-2 {
     margin: 0px 50px 40px 40px;
-  }
-  .information {
-    justify-content: space-between;
-  }
-  .f-form {
-    display: none;
   }
   .width-60 {
     width: 60%;
@@ -855,6 +862,10 @@ CONTACT
   .records {
     margin: 100px auto;
   }
+  .our_address {
+    padding: 20px 30px;
+    width: 25%;
+  }
 }
 
 /*===============
@@ -864,23 +875,14 @@ CONTACT
   .banner {
     height: 150px;
   }
+  .our_address {
+    width: 35.5%;
+  }
   h4 {
     font-size: 30px;
     line-height: 38px;
     margin-top: 11px;
     font-weight: 600;
-  }
-  .our_address {
-    width: 33.5%;
-  }
-  .icon-w {
-    min-width: 65px;
-    width: 65px;
-    height: 65px;
-  }
-  .icon-w img {
-    width: 35px;
-    height: 35px;
   }
   h5 {
     font-size: 17px;
@@ -900,14 +902,14 @@ CONTACT
     width: 6px;
     height: 6px;
   }
+  .owl-dots {
+    margin: 0 6px;
+  }
   .map iframe {
     height: 350px !important;
   }
   .map-layout {
     display: none;
-  }
-  .owl-dots {
-    margin: 0 6px;
   }
   p,
   small,
