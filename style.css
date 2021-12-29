@@ -644,6 +644,36 @@ SERVICES PAGES
 .s-phone {
   margin-left: 5px;
 }
+/*=====
+ PRICES
+ ======== */
+.promo_card {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  max-width: 324px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+  background-color: var(--white);
+  padding: 50px;
+  box-shadow: var(--questions-box-shadow);
+}
+.promo_icon svg {
+  width: 90px;
+  height: 90px;
+}
+.promo_icon svg path {
+  fill: #000;
+}
+.promo_price h2 {
+  color: var(--green-color);
+}
+.show_order {
+  display: none;
+  margin: 20px auto;
+}
+
 /*==========================
  MEDIA QUERY FROM HERE 500px
  ============================ */
@@ -656,7 +686,11 @@ SERVICES PAGES
     width: 50%;
     padding: 0 20px;
   }
-
+  h5 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 6px;
+  }
   .advantages_wrap {
     display: flex;
     justify-content: space-between;
@@ -743,6 +777,9 @@ SERVICES PAGES
   }
   .our_address h5 {
     font-size: 18px;
+  }
+  .table-head {
+    width: 60%;
   }
   .link_1 {
     max-width: 33.3%;
