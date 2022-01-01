@@ -657,8 +657,9 @@ SERVICES PAGES
   transition: all ease-in 0.3s;
   background-color: var(--white);
   padding: 50px;
-  box-shadow: var(--questions-box-shadow);
+  box-shadow: 0 10px 20px rgb(157 174 185 / 15%);
 }
+
 .promo_icon svg {
   width: 90px;
   height: 90px;
@@ -673,7 +674,52 @@ SERVICES PAGES
   display: none;
   margin: 20px auto;
 }
-
+.the_button {
+  display: block;
+}
+.the_button button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0 19px 40px rgba(157, 174, 185, 0.2);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #323232;
+  padding: 10px 20px;
+  height: 45px;
+  margin-top: 15px;
+}
+.the_button button:hover {
+  border: 0;
+  color: var(--white);
+  background-color: var(--green-color);
+}
+.the_button button.on_me {
+  color: #fff;
+  background: linear-gradient(to left, #44ae6f, #54b963);
+}
+.price_parent {
+  position: relative;
+  margin-bottom: 450px;
+}
+.most_popular {
+  margin-top: 30px;
+}
+.tags {
+  display: flex;
+  align-items: center;
+  padding: 6px 28px;
+  border-radius: 19px;
+  justify-content: space-between;
+}
+.tags small,
+.tags p {
+  margin-top: 0;
+}
+.most_popular .tags:nth-child(odd) {
+  background-color: #f8f9f8;
+}
 /*==========================
  MEDIA QUERY FROM HERE 500px
  ============================ */
