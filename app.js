@@ -2,6 +2,11 @@ const promoCard = document.querySelectorAll(".promo_card");
 const promoIcon = document.querySelector(".promo_icon");
 const showButton = document.querySelector(".show_order");
 
+// CONST FOR HAMBURGER
+const navBar = document.querySelector(".hambuger");
+const closeNav = document.querySelector(".close_nav");
+const navLinks = document.querySelector(".nav-links");
+
 // CONSTANT FOR PRICE TABS
 const popularPrice = document.querySelector(".popular_price");
 const fullPrice = document.querySelector(".full_price");
@@ -12,6 +17,15 @@ const totalList = document.querySelector(".all_list");
 const otherList = document.querySelector(".all_list2");
 
 const allTabs = document.querySelectorAll(".d-tabs");
+
+// HAMBURGER MENU
+navBar.addEventListener("click", () => {
+  navLinks.classList.toggle("show-nav");
+  console.log("you click me");
+  closeNav.addEventListener("click", () => {
+    navLinks.classList.remove("show-nav");
+  });
+});
 
 // PRICE ON HOVER
 for (let i = 0; i < promoCard.length; i++) {

@@ -109,7 +109,7 @@ a:hover {
   outline: 0;
 }
 button:hover {
-  border: 3px solid var(--green-color);
+  border: 1px solid var(--green-color);
   color: var(--green-color);
   background-color: transparent;
 }
@@ -229,7 +229,7 @@ nav {
   box-shadow: var(--questions-box-shadow);
   background-color: var(--white);
 }
-nav ul {
+.nav-links {
   display: flex;
 }
 nav h1 {
@@ -238,6 +238,7 @@ nav h1 {
 nav h1 span {
   color: var(--green-color);
 }
+
 nav > ul > li > a {
   font-size: 17px;
   line-height: 21px;
@@ -247,6 +248,24 @@ nav > ul > li > a {
   text-decoration: none;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
+}
+.close_nav {
+  font-size: 17px;
+  line-height: 21px;
+  color: #323232;
+  padding: 21px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.close_nav::before {
+  content: "X";
+  font-size: 17px;
+  color: #323232;
+  font-weight: 400;
+  margin-right: 7px;
 }
 .b_name {
   font-size: 22px;
@@ -938,6 +957,12 @@ hr {
 /* ======
 1187
 ====== */
+@media (min-width: 1187px) {
+  .close_nav,
+  hr {
+    display: none;
+  }
+}
 @media (max-width: 1187px) {
   .tel-social {
     display: none;
@@ -958,7 +983,7 @@ hr {
     height: 3px;
     margin: 5px;
   }
-  nav ul {
+  .nav-links {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -966,10 +991,30 @@ hr {
     width: 280px;
     left: 0;
     top: 50px;
+    height: 100vh;
+    transform: translateX(-280px);
+  }
+  .quickcontact {
+    padding: 0px 20px 15px;
+  }
+  .d-hate hr {
+    margin: 15px 0;
+  }
+  .quickcontact li {
+    font-size: inherit;
+    color: #7b7b7b;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .show-nav {
+    transform: translateX(0px);
   }
   .d-call {
     display: none;
   }
+  /* .backdrop {
+    display: none;
+  } */
 }
 
 @media (min-width: 650px) {
@@ -1090,13 +1135,15 @@ hr {
     display: flex;
     justify-content: space-between;
   }
-
+  .d-hate {
+    display: none;
+  }
   .first_table {
     width: 48%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .banner {
     height: 150px;
   }
