@@ -20,7 +20,7 @@ const allTabs = document.querySelectorAll(".d-tabs");
 
 // HAMBURGER MENU
 navBar.addEventListener("click", () => {
-  navLinks.classList.toggle("show-nav");
+  navLinks.classList.add("show-nav");
   console.log("you click me");
   closeNav.addEventListener("click", () => {
     navLinks.classList.remove("show-nav");

@@ -962,6 +962,12 @@ hr {
   hr {
     display: none;
   }
+  .popular_price,
+  .full_price,
+  .other_prices {
+    height: 70px;
+    padding: 22px;
+  }
 }
 @media (max-width: 1187px) {
   .tel-social {
@@ -1141,6 +1147,11 @@ hr {
   .first_table {
     width: 48%;
   }
+  .banner {
+    height: 200px;
+    margin-top: 100px;
+    padding: 120px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1192,9 +1203,6 @@ hr {
 ======== */
 @media (min-width: 1024px) {
   .banner {
-    margin-top: 50px;
-    height: 288px;
-    padding: 120px 0;
     background: url(images/section-banner.jpg) no-repeat right center/cover;
   }
   .information {
