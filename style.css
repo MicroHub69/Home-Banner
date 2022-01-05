@@ -646,7 +646,7 @@ SERVICES PAGES
 }
 .owl-dot:hover,
 .owl-dot.active {
-  background-color: var(--green-color);
+  background-color: var(--green-color) !important;
 }
 .carousel {
   max-width: 1200px;
@@ -998,6 +998,7 @@ hr {
     left: 0;
     top: 50px;
     height: 100vh;
+    transition: all 0.5s ease;
     transform: translateX(-280px);
   }
   .quickcontact {
