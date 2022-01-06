@@ -15,15 +15,24 @@ const otherPrices = document.querySelector(".other_prices");
 const popularList = document.querySelector(".most_popular");
 const totalList = document.querySelector(".all_list");
 const otherList = document.querySelector(".all_list2");
+const overlay = document.querySelector(".nav__overlay");
 
 const allTabs = document.querySelectorAll(".d-tabs");
 
 // HAMBURGER MENU
 navBar.addEventListener("click", () => {
   navLinks.classList.add("show-nav");
+  overlay.classList.add("show-overlay");
   console.log("you click me");
+
   closeNav.addEventListener("click", () => {
     navLinks.classList.remove("show-nav");
+    overlay.classList.remove("show-overlay");
+  });
+
+  overlay.addEventListener("click", () => {
+    navLinks.classList.remove("show-nav");
+    overlay.classList.remove("show-overlay");
   });
 });
 

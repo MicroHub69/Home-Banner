@@ -225,6 +225,7 @@ section {
   top: 0;
   left: 0;
   z-index: 100;
+  z-index: 100;
   width: 100%;
 }
 nav {
@@ -410,7 +411,8 @@ nav > ul > li > a {
   margin-top: 2px;
 }
 
-.adv_inner {
+.adv_inner,
+.target_this {
   display: flex;
   margin: 20px 0;
 }
@@ -471,9 +473,9 @@ nav > ul > li > a {
   transition: 0.2s;
   cursor: pointer;
 }
-.f-social li:hover.svg {
+/* .f-social li:hover.svg {
   fill: red;
-}
+} */
 footer {
   padding: 30px 0 20px;
   background-color: #323232;
@@ -1007,24 +1009,43 @@ hr {
     width: 280px;
     left: 0;
     top: 50px;
+    z-index: 2;
     height: 100vh;
     transition: all 0.5s ease;
     transform: translateX(-280px);
+  }
+  .nav__overlay {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    /* backdrop-filter: blur(1px); */
+    z-index: -1;
   }
   .quickcontact {
     padding: 0px 20px 15px;
   }
   .d-hate hr {
-    margin: 15px 0;
+    margin: 30px 0;
   }
   .quickcontact li {
     font-size: inherit;
     color: #7b7b7b;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .show-nav {
     transform: translateX(0px);
+  }
+  .show-overlay {
+    opacity: 1;
+    visibility: visible;
   }
   .d-call {
     display: none;
@@ -1040,8 +1061,8 @@ hr {
     padding: 0 20px;
   }
 
-  .adv_inner {
-    width: 40.3%;
+  .target_this {
+    width: 47.3%;
     padding: 0 10px;
   }
   .width-60 {
@@ -1124,7 +1145,7 @@ hr {
   .f-policy li {
     padding: 0 10px;
   }
-  .adv_inner {
+  .target_this {
     width: 33.3%;
     padding: 0 30px;
   }
