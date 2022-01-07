@@ -477,7 +477,7 @@ nav > ul > li > a {
   fill: red;
 } */
 footer {
-  padding: 30px 0 20px;
+  padding: 30px 20px;
   background-color: #323232;
   color: #e7e7e7;
 }
@@ -964,6 +964,9 @@ hr {
   .f_experience {
     margin-top: 30px;
   }
+  .home_layout {
+    margin-top: 10px;
+  }
   .hide_on_mobile {
     display: none;
   }
@@ -1133,6 +1136,12 @@ hr {
     display: flex;
     justify-content: space-between;
   }
+
+  .footer_div {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
   .b_name {
     font-size: 26px;
   }
@@ -1148,6 +1157,7 @@ hr {
     margin: 0;
   }
   .footer_txt {
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
   }
