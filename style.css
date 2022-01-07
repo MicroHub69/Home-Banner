@@ -622,6 +622,9 @@ SERVICES PAGES
   width: 35px;
   height: 35px;
 }
+.tt-icon svg {
+  fill: #fff;
+}
 .tt-icon svg path {
   fill: #fff;
 }
@@ -657,7 +660,7 @@ SERVICES PAGES
 .owl-dot.active {
   background-color: var(--green-color) !important;
 }
-.carousel {
+.carousel,.merge_cores {
   max-width: 1200px;
   margin: auto;
 }
@@ -1157,7 +1160,7 @@ hr {
     margin: 0;
   }
   .footer_txt {
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
   }
