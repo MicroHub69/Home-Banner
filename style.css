@@ -649,7 +649,7 @@ SERVICES PAGES
 .owl-dot {
   width: 10px;
   height: 10px;
-  margin: 0 16px;
+  margin: 0 10px;
   outline: 0;
   border-radius: 50%;
   background-color: #eaedea !important;
@@ -660,7 +660,8 @@ SERVICES PAGES
 .owl-dot.active {
   background-color: var(--green-color) !important;
 }
-.carousel,.merge_cores {
+.carousel,
+.merge_cores {
   max-width: 1200px;
   margin: auto;
 }
