@@ -959,9 +959,9 @@ hr {
  650PX
 ====== */
 @media (max-width: 650px) {
-  .owl-carousel .owl-item img {
+  /* .owl-carousel .owl-item img {
     width: 150px !important;
-  }
+  } */
   .our_address {
     width: 100% !important;
   }
