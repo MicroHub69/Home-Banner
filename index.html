@@ -620,7 +620,7 @@
           </div>
 
           <div class="short_clip">
-            <div class="big-number-circle">
+            <div class="big-number-circle shownum">
               <strong>01</strong>
               <div class="circle-img">
                 <img src="images/LaundryBus.png" alt="" />
@@ -634,7 +634,7 @@
               </div>
             </div>
 
-            <div class="big-number-circle zombie">
+            <div class="big-number-circle">
               <strong>02</strong>
               <div class="circle-img invade">
                 <img src="images/PackCloth.png" alt="" />
@@ -648,7 +648,7 @@
               </div>
             </div>
 
-            <div id="third" class="big-number-circle zombie">
+            <div id="third" class="big-number-circle">
               <strong>03</strong>
               <div class="circle-img invade">
                 <img src="images/HangWell.png" alt="" />
@@ -662,7 +662,7 @@
               </div>
             </div>
 
-            <div class="big-number-circle zombie">
+            <div class="big-number-circle">
               <strong>04</strong>
               <div class="circle-img invade">
                 <img src="images/WeWash.png" alt="" />
@@ -677,13 +677,19 @@
             </div>
 
             <div class="switch">
-              <ul class="progress-container">
+              <div class="progress-container">
                 <div class="progress" id="progress" style="width: 0%"></div>
-                <li class="circle on">1</li>
-                <li class="circle" id="next">2</li>
-                <li class="circle" id="next">3</li>
-                <li class="circle" id="next">4</li>
-              </ul>
+                <button class="circle on" onclick="carouselButton(0)">1</button>
+                <button class="circle" id="next" onclick="carouselButton(1)">
+                  2
+                </button>
+                <button class="circle" id="next" onclick="carouselButton(2)">
+                  3
+                </button>
+                <button class="circle" id="next" onclick="carouselButton(3)">
+                  4
+                </button>
+              </div>
             </div>
           </div>
         </div>
