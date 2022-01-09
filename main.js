@@ -1,8 +1,8 @@
-// const progress = document.getElementById("progress");
-// const prev = document.getElementById("prev");
-// const next = document.getElementById("next");
+const progress = document.getElementById("progress");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
 const slideInfo = document.querySelectorAll(".big-number-circle");
-// const circles = document.querySelectorAll(".circle");
+const circles = document.querySelectorAll(".circle");
 
 const carouselButton = (slideNumber) => {
   slideInfo.forEach((slide, index) => {
@@ -13,44 +13,44 @@ const carouselButton = (slideNumber) => {
     }
   });
 };
-console.log(carouselButton);
+// console.log(carouselButton);
 
-// let currentActive = 1;
+let currentActive = 1;
 
-// next.addEventListener("click", () => {
-//   currentActive++;
+next.addEventListener("click", () => {
+  currentActive++;
 
-//   if (currentActive > circles.length) {
-//     currentActive = circles.length;
-//   }
+  if (currentActive > circles.length) {
+    currentActive = circles.length;
+  }
 
-//   update();
-// });
+  update();
+});
 
-// prev.addEventListener("click", () => {
-//   currentActive--;
+prev.addEventListener("click", () => {
+  currentActive--;
 
-//   if (currentActive < 1) {
-//     currentActive = 1;
-//   }
+  if (currentActive < 1) {
+    currentActive = 1;
+  }
 
-//   update();
-// });
+  update();
+});
 
-// function update() {
-//   circles.forEach((circle, idx) => {
-//     if (idx < currentActive) {
-//       circle.classList.add("on");
-//     } else {
-//       circle.classList.remove("on");
-//     }
-//   });
+function update() {
+  circles.forEach((circle, idx) => {
+    if (idx < currentActive) {
+      circle.classList.add("on");
+    } else {
+      circle.classList.remove("on");
+    }
+  });
 
-//   const actives = document.querySelectorAll(".on");
+  const actives = document.querySelectorAll(".on");
 
-//   progress.style.width =
-//     ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
-// }
+  progress.style.width =
+    ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
+}
 
 //   if (currentActive === 1) {
 //     prev.disabled = true;
