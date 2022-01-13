@@ -2,17 +2,18 @@ const progress = document.getElementById("progress");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const slideInfo = document.querySelectorAll(".big-number-circle");
-const circles = document.querySelectorAll(".circle");
+// const circles = document.querySelectorAll(".circle");
 
-const carouselButton = (slideNumber) => {
-  slideInfo.forEach((slide, index) => {
-    if (index === slideNumber) {
-      slide.classList.add("shownum");
-    } else {
-      slide.classList.remove("shownum");
-    }
-  });
-};
+// const carouselButton = (slideNumber) => {
+//   slideInfo.forEach((slide, index) => {
+//     if (index === slideNumber) {
+//       slide.classList.add("shownum");
+//     } else {
+//       slide.classList.remove("shownum");
+//     }
+//   });
+// };
+
 // console.log(carouselButton);
 
 let currentActive = 1;

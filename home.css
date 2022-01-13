@@ -105,7 +105,7 @@
   color: var(--white);
 }
 .big-number-circle {
-  visibility: hidden;
+  /* visibility: hidden; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +190,8 @@
   margin: 0 30px;
   text-align: center;
 }
-.switch li {
+.switch button {
+  cursor: pointer;
   font-weight: 700;
   margin-top: 0;
 }
@@ -230,6 +231,7 @@
 .circle {
   background-color: #fff;
   color: #999;
+  cursor: pointer;
   border-radius: 50%;
   height: 50px;
   width: 50px;
